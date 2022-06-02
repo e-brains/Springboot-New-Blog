@@ -19,7 +19,7 @@ let index = {
 
 	/*회원가입 완료*/
 	save: function() {
-		alert('user의 save함수 호출됨');
+		//alert('user의 save함수 호출됨');
 		let data = {
 			username: $("#username").val(),
 			password: $("#password").val(),
@@ -103,7 +103,7 @@ function idCheck() {
 	// 받는 dataType이 json이면 자바스크립트 오브젝트로 파싱해 준다.
 	$.ajax({
 		type: "POST",
-		url: "/user?cmd=idCheck",
+		url: "/user/idCheck",
 		data: username,
 		contentType: "text/plain; charset=utf-8",
 		dataType: "text" // 응답 받을 데이터의 타입을 적으면 자바스크립트 오브젝트로 파싱해줌.
@@ -113,7 +113,7 @@ function idCheck() {
 			alert('유저네임이 중복되었습니다.')
 		} else {
 			isChecking = true;
-			$("#username").attr("readonly", "readonly");
+			//$("#username").attr("readonly", "readonly");
 			alert("해당 유저네임을 사용할 수 있습니다.")
 		}
 	});
