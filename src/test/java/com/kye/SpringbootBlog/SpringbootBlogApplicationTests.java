@@ -1,4 +1,4 @@
-package com.kye.blog;
+package com.kye.SpringbootBlog;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
